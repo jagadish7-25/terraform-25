@@ -34,7 +34,7 @@ variable "instance_type_cost_mem" {
     }
   
 }
-output "instance_type_cost_mem" {
-    value= var.instance_type
+output "instances" {
+    value= var.instance_type_cost_mem[0]
   
 }
