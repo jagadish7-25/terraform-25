@@ -1,4 +1,4 @@
-data "aws_ami" "example" {
+data "aws_ami" "latest" {
   executable_users = ["self"]
   most_recent      = true
   name_regex       = "centos-*"
@@ -8,6 +8,6 @@ data "aws_ami" "example" {
 
 
 output "myami" {
-    value = data.aws_ami.myami
+    value = data.aws_ami.latest
   
 }
