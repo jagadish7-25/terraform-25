@@ -8,8 +8,8 @@ resource "aws_instance" "terraform-R" {
   }
 }
 
-resource "aws_route53_record" "frontend" {
-  name            = "frontend.me25.online"
+resource "aws_route53_record" "mongodb" {
+  name            = "mongodb.me25.online"
   ttl             = 30
   type            = "A"
   zone_id         = "Z0674306Y5K4DOUDCVST"
