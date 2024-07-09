@@ -4,7 +4,7 @@ variable "components" {
 
 resource "aws_instance" "instance" {
 
-  count = lenght(var.components)
+  count = length(var.components)
 
   ami           = "ami-0b4f379183e5706b9"
   instance_type = "t2.micro"
