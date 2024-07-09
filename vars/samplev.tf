@@ -4,7 +4,7 @@ variable "instance_type" {
 }
 
 variable "instance_types" {
-    default = [ "jj2.micro", "jj3.medium", jj5.large"]
+    default = [ "jj2.micro", "jj3.medium", "jj5.large"]
   
 }
 
