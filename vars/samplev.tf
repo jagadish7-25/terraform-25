@@ -4,30 +4,30 @@ variable "instance_type" {
 }
 
 variable "instance_types" {
-    default = [ "t2.micro", "t3.medium", "c5.large"]
+    default = [ "jj2.micro", "jj3.medium", jj5.large"]
   
 }
 
 variable "instance_type_cost" {
     default = {
-        t2.micro = 100
-        t3.medium = 200
-        c5.large = 400
+        jj2.micro = 100
+        jj3.medium = 200
+        jj5.large = 400
     }
   
 }
 
 variable "instance_type_cost_mem" {
     default = {
-        t2.micro = {
+        jj2.micro = {
             cost = 100
             mem = 20
         }
-        t3.medium = {
+        jj3.medium = {
             cost = 200
             mem = 40
         }
-        c5.large = {
+        jj5.large = {
             cost = 400
             mem = 150
         }
