@@ -34,7 +34,7 @@ variable "instance_type_cost_mem" {
     }
   
 }
-output "instances" {
-    value= var.instance_type_cost_mem[0]
+output "instance_type_cost_mem_jj2.micro" {
+    value= var.instance_type_cost_mem[jj2].cost
   
 }
