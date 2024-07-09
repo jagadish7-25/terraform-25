@@ -17,3 +17,4 @@ resource "aws_route53_record" "mongodb" {
   records = [aws_instance.terraform-R.private_ip]
   
 }
+
