@@ -1,4 +1,4 @@
-resource " aws-iam_user" "latest" {
+resource "aws_iam_user" "latest" {
     count = length(var.user_name)
     name = var.user_name[count.index] 
 
