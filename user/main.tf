@@ -1,6 +1,7 @@
 resource "aws_iam_user" "latest" {
-    count = length(var.user_name)
-    name = var.user_name[count.index] 
+   for_each = var.user_name
+   name = each.value 
+
 
 
 }
