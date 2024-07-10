@@ -12,7 +12,7 @@ data "aws_iam_role" "user" {
 }
 
 output "name" {
-  value = data.aws_iam_role_user.name
+  value = data.aws_iam_role.user.name
 }
 
   variable "instance" {
