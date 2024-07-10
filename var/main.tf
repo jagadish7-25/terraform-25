@@ -11,8 +11,8 @@ data "aws_iam_role" "user" {
   name  =  " terraformrole"
 }
 
-output "role" {
-  value = data.aws_iam_role_user.role
+output "name" {
+  value = data.aws_iam_role_user.name
 }
 
   variable "instance" {
