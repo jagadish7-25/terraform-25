@@ -7,15 +7,8 @@ resource "aws_iam_user" "latest" {
 }
 
 variable "user_name" {
-    default = {
-        name = "jack-1"
-    }
-    {
-        name = "jack-2"
+    default = ["jack-1","jack-2","jack-3"]
+    type = set(string)    
     }
 
-     {
-        name = " jack-3"
-     } 
-}
 
