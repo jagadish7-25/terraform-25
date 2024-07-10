@@ -1,6 +1,10 @@
 variable "name" {}
    
 
-  variable "instance" {}
+variable "instance" {}
+variable "env_name" {
+  
+}
+  
     
 
