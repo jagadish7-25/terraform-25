@@ -7,20 +7,10 @@ resource "aws_instance" "latest" {
   }
 }
 
-data "aws_iam_role" "user" {
-  name  =  " terraformrole"
-}
-
-output "name" {
-  value = data.aws_iam_role.user.name
-}
-
   variable "instance" {
     default = "t2.micro"
     
   }
 
-  variable "name" {
-    default = "jack-1"
-    
-  }
+ variable "name" {}
+ 
