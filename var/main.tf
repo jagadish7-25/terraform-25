@@ -7,8 +7,4 @@ resource "aws_instance" "latest" {
   }
 }
 
-  variable "instance" {
-    default = "t2.micro"
-    
-  }
-
+  
