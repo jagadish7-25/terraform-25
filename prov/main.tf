@@ -5,7 +5,7 @@ resource "aws_instance" "ec2_example" {
      vpc_security_group_ids = [ "sg-09c956a01686bdc1d" ]
 
       connection {
-    type     = "password"
+    type     = "ssh"
     user     = "centos"
     password = "DevOps321"
     host     = "self.public_ip"
