@@ -4,6 +4,13 @@ resource "aws_instance" "ec2_example" {
     instance_type = "t2.micro" 
      vpc_security_group_ids = [ "sg-09c956a01686bdc1d" ]
 
+      connection {
+    type     = "password"
+    user     = "centos"
+    password = "DevOps321"
+    host     = "self.public_ip"
+  }
+
   provisioner "file" {
     source      = "/root/terraform-25/index.html"
     destination = "/tmp/web/index.html"
