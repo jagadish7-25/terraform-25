@@ -6,7 +6,6 @@ resource "aws_instance" "ec2_example" {
 
   provisioner "file" {
     source      = "/root/terraform-25/index.html"
-
     destination = "/tmp/web/index.html"
   }
 }
