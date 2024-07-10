@@ -8,7 +8,7 @@ resource "aws_instance" "latest" {
 }
 
 data "aws_iam_role" "user" {
-  name =  "AWSReservedSSO_AdministratorAccess.*"
+  name  =  " terraformrole"
 }
 
 output "role_arn" {
