@@ -7,7 +7,13 @@ resource "aws_instance" "latest" {
   }
 }
 
+data "aws_iam_role" "user" {
+  name =  "AWSReservedSSO_AdministratorAccess.*"
+}
 
+output "role_arn" {
+  value = data.aws_iam_role.user_role.arn
+}
 
   variable "instance" {
     default = "t2.micro"
