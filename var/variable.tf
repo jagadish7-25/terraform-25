@@ -1,5 +1,4 @@
-variable "name" {
-    default = "jack-1"
-    }
+variable "name" {}
+   
 
   
