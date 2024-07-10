@@ -7,7 +7,15 @@ resource "aws_iam_user" "latest" {
 }
 
 variable "user_name" {
-    default = [ "jack1", "jac2", "jack3"]
-  
+    default = {
+        name = "jack-1"
+    }
+    {
+        name = "jack-2"
+    }
+
+     {
+        name = " jack-3"
+     } 
 }
 
